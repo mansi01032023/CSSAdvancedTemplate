@@ -1,0 +1,135 @@
+/* header starts here */
+.header {
+    display: flex;
+}
+
+.header__div {
+    width: 75%;
+    font-size: 1.2em;
+    padding: 3% 3% 1% 5%;
+}
+
+.header__nav {
+    float: right;
+    width: 50%;
+}
+
+.header__nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__nav-list a {
+    padding: 8px;
+}
+/* section starts here */
+.section__div1 {
+    margin: 1% 2.5% 0% 2.5%;
+    background-color: #eeeeee;
+    padding: 1.5% 1.5% 3% 1.5%;
+}
+
+.section__div1-p1 {
+    width: 20%;
+}
+
+.section__div2 {
+    display: flex;
+    margin: 0% 2% 2% 2%;
+}
+
+.section__div2-box {
+    padding: 3%;
+}
+
+.section__div2-box h3 {
+    text-align: center;
+}
+
+.section__div2-box p {
+    text-align: justify;
+    padding-bottom: 5%;
+}
+
+.section__div2-box a {
+    margin-top: 2%;
+    color: black;
+    margin-left: 35%;
+}
+
+.div2-boxi {
+    height: 150px;
+    background-color: #eeeeee;
+}
+
+.section__div3 {
+    background-color: #eeeeee;
+    display: flex;
+    margin: 0% 3% 3% 3%;
+    padding: 1.5% 1.5% 1.5% 20%;
+}
+
+.section__div3-sub {
+    padding-top: 3%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.section__div3-tb {
+    height: 15px;
+    padding: 1% 2% 1% 1%;
+    margin: 2%;
+    width: 30%;
+}
+
+.section__div3-st {
+    background-color: #288acf;
+    border: none;
+    height: 33px;
+    margin: 2% 2% 2% 0%;
+    padding: 1% 1% 1% 0%;
+    width: 20%;
+    color: white;
+    font-weight: bold;
+}
+/* footer starts here */
+.footer {
+    display: flex;
+}
+
+.footer__left {
+    float: left;
+    width: 75%;
+    margin: 0% 5% 5%;
+}
+
+.footer__right {
+    float: right;
+    width: 50%;
+    margin-left: 40%;
+}
+
+@media (max-width:600px) {
+    .section__div2 {
+        flex-flow: column;
+    }
+}
+
+@media (max-width:347px) {
+    .header__nav-list {
+        flex-flow: column;
+    }
+}
+
+@media (max-width:600px) {
+    .section__div3 {
+        flex-flow: column;
+        align-items: first baseline;
+    }
+}
+
+@media (max-width:403px) {
+    .footer {
+        flex-flow: column;
+    }
+}
